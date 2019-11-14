@@ -11,5 +11,15 @@ $ ./venv/bin/pip install -qr requirements.txt
 $ FLASK_ENV=development ./venv/bin/python3 app/server.py
 ```
 
+### Run in Docker
+Build the container image.
+```shell
+docker build -t branchintl/hello-branch-world . 
+```
+Run the container.
+```shell
+docker run --rm -it branchintl/hello-branch-world
+```
+
 ## License
 Licensed under [MIT](LICENSE).
